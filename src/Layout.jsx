@@ -53,14 +53,14 @@ const Layout = () => {
               className={`md:hidden flex flex-col item-center gap-4 p-4 ${menuOpen ? "block" : "hidden"}`}
             >
               <ul className="text-xl flex flex-col">
-                <li><a href="/shop">Shop</a></li>
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/contacts">Contacts</a></li>
-                <li><a href="/docs">Blog</a></li>
-                <li><a href="/sign-in">Sign In</a></li>
-                <li><a href="/register" style={{ textDecoration: "none" }}>
+                <li><Link to="/shop">Shop</Link></li>
+                <li><Link to="/pricing">Pricing</Link></li>
+                <li><Link to="/contacts">Contacts</Link></li>
+                <li><Link to="/docs">Blog</Link></li>
+                <li><Link to="/sign-in">Sign In</Link></li>
+                <li><Link to="/register" style={{ textDecoration: "none" }}>
                   <span className="text-xl">Create Account</span>
-                </a></li>
+                </Link></li>
               </ul>
             </nav>
           </header>
