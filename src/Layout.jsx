@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
+import { Link } from 'react-router-dom';
 
 const Layout = () => {
   // State to manage the collapsible menu
@@ -17,17 +18,17 @@ const Layout = () => {
           <header>
             <nav className="flex pt-4 items-center text-sm">
               <h1 className="font-bold text-xl">
-                <a href="/">Ekta<span className="text-green-600">Labs</span></a>
+                <Link to="/">Ekta<span className="text-green-600">Labs</span></Link>
               </h1>
               <div className="flex-1"></div>
               {/* Main navigation links */}
               <ul className="flex items-center md:gap-6 relative">
-                <li className="hidden md:block"><a href="/shop">Shop</a></li>
-                <li className="hidden md:block"><a href="/pricing">Pricing</a></li>
-                <li className="hidden md:block"><a href="/contacts">Contacts</a></li>
-                <li className="hidden md:block"><a href="/blog">Blog</a></li>
-                <li className="hidden md:block"><a href="/sign-in">Sign In</a></li>
-                <li className="hidden md:block"><a className="btn btn-small btn-primary" href="/register">Create Account</a></li>
+                <li className="hidden md:block"><Link to="/shop">Shop</Link></li>
+                <li className="hidden md:block"><Link to="/pricing">Pricing</Link></li>
+                <li className="hidden md:block"><Link to="/contacts">Contacts</Link></li>
+                <li className="hidden md:block"><Link to="/blog">Blog</Link></li>
+                <li className="hidden md:block"><Link to="/sign-in">Sign In</Link></li>
+                <li className="hidden md:block"><Link to="/register" className="btn btn-small btn-primary">Create Account</Link></li>
               </ul>
 
               {/* Mobile toggle button */}
@@ -72,9 +73,9 @@ const Layout = () => {
 
           <footer className="bg-black bg-opacity-100 text-theme-100 p-8 mb-8 grid md:grid-cols-4 gap-8 text-sm relative z-10">
             <div className="flex flex-col gap-8">
-              <a href="/" className="text-xl font-bold h-[30px] flex items-end">
+              <Link to="/shop" className="text-xl font-bold h-[30px] flex items-end">
                 Ekta<span className="text-green-600">Labs</span>
-              </a>
+              </Link>
               <div className="flex gap-4">
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <img src="https://bashsenpai.com/logo-twitter.png" alt="twitter" className="w-[24px]" />
