@@ -12,7 +12,7 @@ import Contacts from "./pages/Contacts";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ektalabs">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
