@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, HashRouter  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Layout from "./Layout";
 import Home from "./pages/Home";
@@ -12,7 +12,7 @@ import Contacts from "./pages/Contacts";
 
 const App = () => {
   return (
-    <HashRouter>
+    <Router basename="/ektalabs">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -25,7 +25,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </Router>
   );
 };
 

@@ -7,7 +7,7 @@ const Home = () => {
                 <div className="flex flex-col gap-16">
                     <div className="flex flex-col gap-4">
                         <h2 className="text-4xl text-center font-bold leading-normal">
-                            Bring Your Ideas to Life with 3D Printing!!!
+                            Bring Your Ideas to Life with 3D Printing!
                         </h2>
                         <p className="text-xl text-center leading-relaxed">
                             Our 3D printing services turn your designs into high-quality physical products.
